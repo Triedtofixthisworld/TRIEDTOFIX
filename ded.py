@@ -1,5 +1,4 @@
-print('\x1b[44m\x1b[1;33m</> ɪɴꜱᴛᴀɢʀᴀᴍ ʜᴜɴᴛɪɴɢ ᴛᴏᴏʟ ᴛʀɪᴀʟ | ᴛᴏᴏʟ ʙʏ : #ʀᴀᴅʜᴇʏ ★\x1b[0m')
-print("\x1b[1;39m━" * 60)
+
 import time
 import requests
 from colorama import Style
@@ -96,43 +95,7 @@ def pppp():
     output = f"\rHIT:{hits} | CHECK:{badinsta} | MAILS:{bademail} | GOOD:{goodig} | @boloradhey\r"
     sys.stdout.write(output)
     sys.stdout.flush()
-    
-a = print(f"""
-SELECT WHICH YEAR YOU WANT TO HUNT :
-2012-2015 = 1
-2015-2017 = 2
-2017-2019 = 3
-2015-2019 = 4 
-2012-2020 = 0
-""")
-RADHEYG = input("f TYPE YOUR CHOICE [ EG : 1/2/3/0 ] : ")
-if RADHEYG == '1':
-    bbk = 17699999
-    id = 2500000000
-elif RADHEYG == '2':
-    bbk = 2500000000
-    Ido = 5699785217
-elif RADHEYG == '3':
-    bbk = 5699785217
-    Ido = 21254029834
-elif RADHEYG == '4':
-    bbk = 2500000000
-    Ido = 21254029834
-elif RADHEYG == '0':
-    bbk = 17699999
-    Ido = 60000000000
-else:
-    exit()
-while True:
-    try:
-        a = "https://www.instagram.com/accounts/login"
-        session = requests.Session()
-        aa = session.get(a)
-        csrf = aa.cookies.get('csrftoken')
-        break
-    except:
-        pass
-                
+
 yy = 'abcdefghijklmnopqrstuvwxyz'
 def tll():
     try:
@@ -185,10 +148,8 @@ tll()
 def rest(user):
   try:
     headers = {
-    'X-CSRFToken': 'kCLEkUguulu003U5GPOUKftNy6Xa6C1z',
-    'Cookie': f'csrftoken=kCLEkUguulu003U5GPOUKftNy6Xa6C1z; mid=aEwLWQAEAAHIsU6iw7dleG8F8n_E; ig_did=9E8F6B9A-80FD-4C74-ACC4-7272D8238FCF',
-    'X-Pigeon-Session-Id': '8523af21-0f91-4a63-98d7-4e00b6501780',
-    'X-Pigeon-Rawclienttime': '1750239695.656',
+    'X-Pigeon-Session-Id': '50cc6861-7036-43b4-802e-fb4282799c60',
+    'X-Pigeon-Rawclienttime': '1700251574.982',
     'X-IG-Connection-Speed': '-1kbps',
     'X-IG-Bandwidth-Speed-KBPS': '-1.000',
     'X-IG-Bandwidth-TotalBytes-B': '0',
@@ -284,7 +245,6 @@ def InfoAcc(username, gg):
 📲 𝐈𝐧𝐬𝐭𝐚 » instagram.com/{username}  
 ✨ 𝐂𝐫𝐞𝐝𝐢𝐭𝐬 » @boloradhey 💫  
 ✦ ━━━━━━━━━━━━━ ✦  
-⚠️ ᴜsᴇ ᴡɪᴛʜ ᴄᴀᴜᴛɪᴏɴ ! idk  
 '''
     with open('radhey.txt','a') as f:f.write(f'{ss}\n')
     try:
@@ -405,7 +365,7 @@ def uuu():
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
       Id = rand_ids(bbk,Ido)
-      lsd=''.join(random.choice('azertyuiopmlkjhgfdsqwxcvbnAZERTYUIOPMLKJHGFDSQWXCVBN1234567890') for _ in range(32))
+      lsd=''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for _ in range(32))
       headers = {
     'accept': '*/*',
     'accept-language': 'en,en-US;q=0.9',
@@ -437,7 +397,7 @@ def uuu():
   except Exception as e:''    
 threads = []
 def printing():    
-    for i in range(110):
+    for i in range(160):
         t = threading.Thread(target=uuu)
         t.start()
         threads.append(t)
