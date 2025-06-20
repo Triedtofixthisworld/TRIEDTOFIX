@@ -190,7 +190,7 @@ def date(Id):
             return 2013
         elif 900990001 <= uid < 1629010000:
             return 2014
-        elif 1900000000 <= uid < 2500000000:
+        elif 1629010000 <= uid < 2500000000:
             return 2015
         elif 2500000000 <= uid < 3713668786:
             return 2016
@@ -361,6 +361,8 @@ def uuu():
  while True:
   try:
     domain='@gmail.com'
+    bbk = '900990000'
+    Ido = '40000000000'
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
