@@ -361,13 +361,13 @@ def uuu():
  while True:
   try:
     domain='@gmail.com'
-    bbk = '900990000'
-    Ido = '40000000000'
+    bbk = 2500000000
+    Ido = 21254029834
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
       Id = rand_ids(bbk,Ido)
-      lsd=''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for _ in range(32))
+      lsd=''.join(random.choice('azertyuiopmlkjhgfdsqwxcvbnAZERTYUIOPMLKJHGFDSQWXCVBN1234567890') for _ in range(32))
       headers = {
     'accept': '*/*',
     'accept-language': 'en,en-US;q=0.9',
@@ -393,13 +393,13 @@ def uuu():
       infoinsta[username] = response.json().get('data', {}).get('user', {})
       rr = infoinsta.get(username,{})
       fows = rr.get('follower_count', None)
-      if fows >= 35:
+      if fows >= 30:
 	      email = username + domain
 	      check_on(email)          
   except Exception as e:''    
 threads = []
 def printing():    
-    for i in range(160):
+    for i in range(125):
         t = threading.Thread(target=uuu)
         t.start()
         threads.append(t)
