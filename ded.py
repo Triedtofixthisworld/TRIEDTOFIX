@@ -129,28 +129,28 @@ def tll():
         tll()
 tll()
 def rest(user):
-    try:
-        headers = {
-            'X-Pigeon-Session-Id': '50cc6861-7036-43b4-802e-fb4282799c60',
-            'X-Pigeon-Rawclienttime': '1700251574.982',
-            'X-IG-Connection-Speed': '-1kbps',
-            'X-IG-Bandwidth-Speed-KBPS': '-1.000',
-            'X-IG-Bandwidth-TotalBytes-B': '0',
-            'X-IG-Bandwidth-TotalTime-MS': '0',
-            'X-Bloks-Version-Id': 'c80c5fb30dfae9e273e4009f03b18280bb343b0862d663f31a3c63f13a9f31c0',
-            'X-IG-Connection-Type': 'WIFI',
-            'X-IG-Capabilities': '3brTvw==',
-            'X-IG-App-ID': '567067343352427',
-            'User-Agent': 'Instagram 100.0.0.17.129 Android (29/10; 420dpi; 1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)',
-            'Accept-Language': 'en-GB, en-US',
-            'Cookie': 'ig_did=2341F722-CAEB-464B-BDA5-CE55E169BB70; datr=9RtWaMfrVDu7pd6yG8SP0BZ1; mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd; ds_user_id=56358097119; sessionid=56358097119%3AP8OHjq3Fk1PLfS%3A10%3AAYf8XyyatxOtWvyfEnQ-PDCbea4q5zhphe8tJS7CYQ; wd=344x588; rur="NHA\\05456358097119\\0541782009790:01fe9de4cb3c2a2ff745f4668f9d7805a2f1aabe107ee69be65a0fd776353d65c7e96ddc"',
-            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Host': 'i.instagram.com',
-            'X-FB-HTTP-Engine': 'Liger',
-            'Connection': 'keep-alive',
-            'Content-Length': '356',
-        }
+  try:
+    headers = {
+    'X-Pigeon-Session-Id': '50cc6861-7036-43b4-802e-fb4282799c60',
+    'X-Pigeon-Rawclienttime': '1700251574.982',
+    'X-IG-Connection-Speed': '-1kbps',
+    'X-IG-Bandwidth-Speed-KBPS': '-1.000',
+    'X-IG-Bandwidth-TotalBytes-B': '0',
+    'X-IG-Bandwidth-TotalTime-MS': '0',
+    'X-Bloks-Version-Id': 'c80c5fb30dfae9e273e4009f03b18280bb343b0862d663f31a3c63f13a9f31c0',
+    'X-IG-Connection-Type': 'WIFI',
+    'X-IG-Capabilities': '3brTvw==',
+    'X-IG-App-ID': '567067343352427',
+    'User-Agent': 'Instagram 100.0.0.17.129 Android (29/10; 420dpi; 1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)',
+    'Accept-Language': 'en-GB, en-US',
+       'Cookie': 'ig_did=2341F722-CAEB-464B-BDA5-CE55E169BB70; datr=9RtWaMfrVDu7pd6yG8SP0BZ1; mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd; ds_user_id=56358097119; sessionid=56358097119%3AP8OHjq3Fk1PLfS%3A10%3AAYf8XyyatxOtWvyfEnQ-PDCbea4q5zhphe8tJS7CYQ; wd=344x588; rur="NHA\05456358097119\0541782009790:01fe9de4cb3c2a2ff745f4668f9d7805a2f1aabe107ee69be65a0fd776353d65c7e96ddc"',
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    'Accept-Encoding': 'gzip, deflate',
+    'Host': 'i.instagram.com',
+    'X-FB-HTTP-Engine': 'Liger',
+    'Connection': 'keep-alive',
+    'Content-Length': '356',
+}
     data = {
     'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
     'ig_sig_key_version': '4',
@@ -183,8 +183,10 @@ def date(Id):
             return 2018
         elif 8507940634 <= uid < 21254029834:
             return 2019
+	elif 21254029834 <= uid < 50000000000:
+	    return 2020
         else:
-            return "2020-2023"
+            return "2021-2023"
     except Exception:
         return 'unknown'
 def InfoAcc(username, gg):
@@ -334,3 +336,52 @@ def rand_ids(bbk,Ido):
     return Id
   else:
     rand_ids(bbk,Ido)
+def uuu():
+ while True:
+  try:
+    domain='@gmail.com'
+bbk = 1629010000
+Ido = 50000000000
+    while True:      
+      rnd=str(random.randint(150, 999))
+      user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
+      Id = rand_ids(bbk,Ido)
+      lsd=''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for _ in range(32))
+      headers = {
+    'accept': '*/*',
+    'accept-language': 'en,en-US;q=0.9',
+    'content-type': 'application/x-www-form-urlencoded',
+    'dnt': '1',
+    'origin': 'https://www.instagram.com',
+    'priority': 'u=1, i',
+    'referer': 'https://www.instagram.com/cristiano/following/',
+    'user-agent': user_agent,
+    'x-fb-friendly-name': 'PolarisUserHoverCardContentV2Query',
+    'x-fb-lsd': lsd,
+}
+      data = {
+    'lsd': lsd,
+    'fb_api_caller_class': 'RelayModern',
+    'fb_api_req_friendly_name': 'PolarisUserHoverCardContentV2Query',
+    'variables': '{"userID":"'+str(Id)+'","username":"cristiano"}',
+    'server_timestamps': 'true',
+    'doc_id': '7717269488336001',
+}
+      response = requests.post('https://www.instagram.com/api/graphql', headers=headers, data=data)
+      username = response.json().get('data', {}).get('user', {}).get('username')
+      infoinsta[username] = response.json().get('data', {}).get('user', {})
+      rr = infoinsta.get(username,{})
+      fows = rr.get('follower_count', None)
+      if fows >= 35:
+	      email = username + domain
+	      check_on(email)          
+  except Exception as e:''    
+threads = []
+def printing():    
+    for i in range(110):
+        t = threading.Thread(target=uuu)
+        t.start()
+        threads.append(t)
+    for t in threads:
+        t.join()
+printing()
