@@ -183,10 +183,8 @@ def date(Id):
             return 2018
         elif 8507940634 <= uid < 21254029834:
             return 2019
-	elif 21254029834 <= uid < 50000000000:
-	    return 2020
         else:
-            return "2021-2023"
+            return "2020-2023"
     except Exception:
         return 'unknown'
 def InfoAcc(username, gg):
@@ -340,8 +338,8 @@ def uuu():
  while True:
   try:
     domain='@gmail.com'
-bbk = 1629010000
-Ido = 50000000000
+bbk = 900990000
+Ido = 21254029834
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
