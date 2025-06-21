@@ -183,10 +183,8 @@ def date(Id):
             return 2018
         elif 8507940634 <= uid < 21254029834:
             return 2019
-	elif 21254029834 <= uid < 50000000000:
-	    return 2020
         else:
-            return "2021-2023"
+            return "2020-2023"
     except Exception:
         return 'unknown'
 def InfoAcc(username, gg):
