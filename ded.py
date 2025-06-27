@@ -224,12 +224,13 @@ def InfoAcc(username, gg):
 𝗙𝗢𝗟𝗟𝗢𝗪𝗜𝗡𝗚 » {fowg}
 𝗣𝗢𝗦𝗧𝗦 » {pp}
 𝗜𝗗 » {Id}
+reset : {rest(username)}
 𝗬𝗘𝗔𝗥 » {date(Id)}
 𝗕𝗜𝗢 » {bio}
 𝗠𝗘𝗧𝗔 » {meta}
 𝗕𝗨𝗦𝗜𝗡𝗘𝗦𝗦 » {bizz}
 🔗 https://www.instagram.com/{username}
-#𝗥𝗔𝗗𝗛𝗘𝗬
+#𝗥𝗔𝗗𝗛𝗘𝗬 : Leaving tg soon !! if you want this tool permanent or open lmk in dm 
 '''
     with open('rdh.txt', 'a') as file:file.write(f'{ss}\n')
     try:
