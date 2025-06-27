@@ -57,7 +57,6 @@ check_expiry()
 
 RADHEY = render('{RADHEY}', colors=['white', 'magenta'], align='center')
 print(RADHEY)
-print(f
 total = 0
 hits = 0
 badinsta = 0
