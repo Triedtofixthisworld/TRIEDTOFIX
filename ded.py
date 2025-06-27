@@ -74,7 +74,7 @@ def pppp():
     b = random.randint(5,208)
     bo = f'\x1b[38;5;{b}m'
     os.system('cls' if os.name == 'nt' else 'clear')
-    output = (f"\rHit : {hits} | Bad : {badinsta} | Mail : {bademail} | Good : {goodig}"\r)
+    output = (f"\rHit : {hits} | Bad : {badinsta} | Mail : {bademail} | Good : {goodig}\r")
     sys.stdout.write(output)
     sys.stdout.flush()
 yy = 'azertyuiopmlkjhgfdsqwxcvbn'
