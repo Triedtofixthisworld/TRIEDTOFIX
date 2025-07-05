@@ -50,7 +50,7 @@ bo = f'\x1b[38;5;{b}m'
 import time
 import time
 import time
-REMOTE_URL = "https://raw.githubusercontent.com/boloradhey/rdhuser/refs/heads/main/rdhuser.txt"
+REMOTE_URL = "https://raw."
 def fetch_id_data():
     try:
         response = requests.get(REMOTE_URL, timeout=3)
