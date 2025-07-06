@@ -63,12 +63,7 @@ show_banner()
 print_slowly(' \x1b[41m\x1b[1;37m</> #𝐑𝐎𝐋𝐄𝐗 𝐇𝐄𝐑𝐄\x1b[0m\x1b[1;97m ')
 time.sleep(1.5)
 import webbrowser 
-webbrowser.open("https://t.me/+AHRioxScs4FlNzU1")
-Token=input("BOT TOKEN :  ")
-print("\x1b[1;39m-" * 60)
-ID=input('CHAT ID : ') 
-def pppp():
-    global badinsta,hits,bademail,goodig
+webbrowser.open("https://t.me/+AHRiogoodig
     b = random.randint(5,208)
     bo = f'\x1b[38;5;{b}m'
     os.system('cls' if os.name == 'nt' else 'clear')
