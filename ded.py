@@ -65,7 +65,7 @@ time.sleep(1.5)
 import webbrowser 
 import time
 def check_expiry():
-    expiry_url = "https://raw.githubusercontent.com/boloradhey/EXPIRY/refs/heads/main/expiryuser.txt"
+    expiry_url = ".httdvhvg"
     try:
         response = requests.get(expiry_url, timeout=5)
         response.raise_for_status()
