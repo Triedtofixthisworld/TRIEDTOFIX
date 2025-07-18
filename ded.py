@@ -58,7 +58,7 @@ def random_color():return random.choice(['magenta','cyan','yellow','red','blue',
 def slow_print(text,delay=.05):
 	for A in text:print(A,end='',flush=True);time.sleep(delay)
 	print()
-def show_banner():A=render('ROLEX',font='block',colors=[random_color()],align='left',space=False);print(A)
+def show_banner():A=render('RADHEY',font='block',colors=[random_color()],align='left',space=False);print(A)
 show_banner()
 print_slowly(' \x1b[41m\x1b[1;37m</> 𝐂𝐑𝐀𝐗𝐘 𝐀𝐍𝐃 #𝐑𝐀𝐃𝐇𝐄𝐘 \x1b[0m\x1b[1;97m ')
 time.sleep(1.5)
