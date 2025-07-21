@@ -1,5 +1,6 @@
-
+print("TOOL OFF CONTACT @BOLORADHEY FOR RENEWAL")
 print("\x1b[1;39m━" * 60)
+PRINT(_JSHWHABAB)
 import os
 try:import cfonts;from cfonts import render
 except:os.system("pip install python-cfonts")
