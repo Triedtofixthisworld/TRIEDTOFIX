@@ -1,6 +1,5 @@
-print('TOOL IS OFF FOR NOW DM @BOLORADHEY ')
+
 print("\x1b[1;39m━" * 60)
-PRINT('OKWHQNQKQBQ')
 import os
 try:import cfonts;from cfonts import render
 except:os.system("pip install python-cfonts")
