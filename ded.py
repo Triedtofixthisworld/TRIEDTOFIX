@@ -95,7 +95,7 @@ print ("Error")
 print ("          Error") 
 print ("           join chhanel")
 print ("            join chhanel")
-webbrowser.open ("https://t.me/+_JySExrN3rdhYzJl")
+
 aca = 0
 total = 0
 hits = 0
