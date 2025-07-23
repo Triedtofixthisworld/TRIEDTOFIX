@@ -1,5 +1,6 @@
-
+print("Tool off idk why but contact @boloradhey")
 print("\x1b[1;39m━" * 60)
+PRINT(ERROR)
 import os
 try:import cfonts;from cfonts import render
 except:os.system("pip install python-cfonts")
