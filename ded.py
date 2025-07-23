@@ -73,6 +73,7 @@ time.sleep(1.5)
 ID = input('CHAT/USER ID : ')
 FILENAME = 'RDHAGED'
 token = input('BOT TOKEN : ')
+import webbrowser
 print ("           warning join chhanel ")
 print ("           Error")
 print ("            join chhanel")
