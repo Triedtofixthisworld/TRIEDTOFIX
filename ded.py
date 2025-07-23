@@ -1,3 +1,5 @@
+print('Tool is now for sale lmk @boloradhey for subscription')
+PRINT(HI)
 import time
 def print_slowly(text, delay=0.1):
    for char in text:
